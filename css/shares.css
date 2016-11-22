@@ -1,0 +1,141 @@
+.shares_background {
+  position: relative;
+  height: 151px;
+  color: #fff;
+  background: #55bc75;
+  background-image: linear-gradient(#55bc75, #55bc75 50%, #4daf7c 50%);
+  border-radius: 5px 5px 0 0;
+}
+.shares_background .shares_information {
+  z-index: 99;
+  position: absolute;
+  font-weight: bold;
+  margin-top: 18px;
+  margin-left: 21px;
+  width: 100px;
+}
+.shares_background .shares_information .shares_information_arrow {
+  width: 0;
+  height: 0;
+  margin-top: 18px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid white;
+  float: left;
+}
+.shares_background .shares_information .shares_information_big_index {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 200;
+  float: left;
+  margin-left: 3px;
+}
+.shares_background .shares_information .shares_information_small_index {
+  font-size: 12px;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.5);
+  clear: left;
+  margin-left: 10px;
+  padding-top: 5px;
+}
+.shares_data {
+  padding: 20px 20px 20px;
+  color: #8a786a;
+  overflow: hidden;
+}
+.shares_data_dynamics{
+  text-align: center;
+}
+.shares_data .shares_data_dynamics a{
+  color: #8a786a;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.shares_data_time {
+  font-size: 12px;
+  margin-top: 15px;
+}
+.shares_data_place {
+  font-size: 20px;
+}
+.shares_data_aapl_name {
+  font-size: 14px;
+  margin-top: 2px;
+}
+.shares_data_yearly_name {
+  font-size: 13px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.shares_data_traded {
+  background-color: #f5f0ec;
+  text-align: center;
+  width: 49%;
+  border-radius: 3px;
+  float: left;
+  padding: 4px 0;
+  margin-top: 10px;
+}
+.shares_data_traded.last {
+  margin-left: 1px;
+}
+.shares_data_traded dt {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+.shares_data_traded dd {
+  font-size: 12px;
+}
+
+.shares_data_aapl {
+  float: left;
+  padding-top: 20px;
+}
+.shares_data_aapl ul {
+  margin: 0;
+  padding: 0;
+}
+.shares_data_aapl li {
+  margin: 0;
+  display: block;
+  width: 9px;
+  height: 40px;
+  margin-right: 6px;
+  background-color: #f5f0ec;
+  float: left;
+  position: relative;
+}
+.shares_data_aapl li span {
+  display: block;
+  width: 9px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+}
+.shares_data_aapl li span.orange {
+  background-color: #e75e3a;
+}
+.shares_data_aapl li span.green {
+  background-color: #4eaf7c;
+}
+
+.shares_data_yearly {
+  width: 94px;
+  float: right;
+  padding-top: 20px;
+}
+.shares_data_yearly span {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  color: white;
+  background-color: #4eaf7c;
+  text-align: center;
+  border-radius: 3px;
+  font-weight: bold;
+}
+.shares_data_yearly span em {
+  color: rgba(255, 255, 255, 0.7);
+}

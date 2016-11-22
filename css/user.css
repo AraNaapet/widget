@@ -1,0 +1,90 @@
+.user_profile {
+    height: 130px; /*-- 40% --*/
+    background-color: #b1a599;
+    border-radius: 5px 5px 0 0;
+}
+
+.user_profile_avatar_image {
+    border: 1px solid #7d7266;
+    border-radius: 50%;
+    float: left;
+    position: absolute;
+    top: 15px;
+    left: 21px;
+    width: 89px;
+    height: 89px;
+}
+.user_profile_user_name{
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #ffffff;
+    width: 160px;
+    height: 40px;
+    position: absolute;
+    top: 34px;
+    left: 121px;
+}
+.user_profile_info {
+    font-size: 13px;
+    letter-spacing: -0.6px;
+    color: #7d7266;
+    position: absolute;
+    top: 75px;
+    left: 120px;
+    width: 160px;
+    height: 30px;
+}
+.user_data_menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-radius:  0 0 5px 5px;
+}
+
+.user_data_menu_content, .user_data_menu_content_last {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    height: 45px;
+    font-size: 15px;
+    color: #c6bfb8;
+}
+.user_data_menu_content_text {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 8%;
+}
+.user_data_menu_content:hover {
+    background-color: #f8f3f0;
+    border-left: 3px solid #4daf7b;
+}
+.user_data_menu_content_last:hover {
+    background-color: #f8f3f0;
+    border-left: 3px solid #4daf7b;
+    border-radius:  0 0 5px 5px;
+}
+.icon-user_01, .icon-user_02, .icon-user_03, .icon-user_04 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 85%;
+}
+[class^="user_data_menu_content"]:hover > [class^="icon-user_"] {
+    color: #e55f3b;
+}
+[class^="user_data_menu_content"]:focus > [class^="icon-user_"] {
+    color: #e55f3b;
+}
+[class^="user_data_menu_content"]:hover > .user_data_menu_content_text {
+    margin-left: -3px;
+    color: #7d7266;
+}
+[class^="user_data_menu_content"]:focus > .user_data_menu_content_text {
+    margin-left: -3px;
+    color: #7d7266;
+}

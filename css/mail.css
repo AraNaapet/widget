@@ -1,0 +1,127 @@
+#mail-widget *{
+    font-family: "Open Sans", sans-serif;
+}
+.mail_form_text {
+    font-weight: 200;
+    font-size: 16px;
+    padding-left: 30px;
+    color: #8e8071;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.mail_form {
+    width: 140%;
+    margin-top: 30px; 
+}
+.mail_form_input{
+    width: 100%;
+}
+.mail_form_input input[type="text"], input[type="subject"] {
+    height: 45px;
+}
+.mail_form_input input[type="text"], input[type="subject"], textarea {
+    width: 60%;
+    border: 1px solid #e5d4c2;
+    border-radius:5px;
+    margin-left: 26px;
+    color: #8e8071;
+    font-size: 16px;
+    padding-left: 15px;
+    outline: none;
+}
+.mail_form_input textarea {
+    line-height: 2em;
+    min-height: 100px;
+}
+.mail_form_input input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #c9c2bc;
+    font-size: 14px;
+}
+.mail_form_input input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #c9c2bc;
+    font-size: 14px;
+}
+.mail_form_footer {
+
+    width: 100%;
+    height: 90px;
+    background-color: #f8f3f0;
+    border-radius: 0 0 5px 5px;
+}
+.mail_form_footer .mail_form_button {
+    width: 100%
+    height: 50px;
+    margin-top: 30px;
+}
+.mail_form_footer .mail_form_button input {
+    width: 20px;
+    height: 20px;
+    margin-left: 25px;
+}
+.mail_form_checkbox_text {
+    position: relative;
+    font-weight: 100;
+    font-size: 14px;
+    color: #8e8071;
+    top: -6px;
+    padding-top: 39px;
+}
+.mail_form_footer .mail_form_button button{
+    position: relative;
+    width: 140px;
+    height: 46px;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #fff;
+    background-color:#e96e49;
+    cursor: pointer;
+    left: 15%;
+    top: -5px;
+    border: none;
+}
+
+  @media (min-width: 992px) {
+    .mail_form_footer .mail_form_button button{
+        left: 10%;
+    }
+  }
+
+.mail_form_button button:hover,
+.mail_form_button button:active {
+   background-color: #4daf7c;
+    color: #fff;
+    border: none;
+}
+#add_contacts {
+    font-size: 40px;
+    height: 38px;
+    width: 7.2%;
+    font-weight:bold;
+    line-height: 22px;
+    padding-bottom: 7px;
+    color: #fff;
+    border: none;
+    position: relative;
+    background-color: #ede3dd;
+    left: -45px;
+    top: 6px;
+    border-radius: 4px;
+}
+#add_contacts:hover,
+#add_contacts:active {
+    background-color: #55bc74;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+#add_contacts:focus{
+    outline: none;
+}
+#resultUsers{
+    padding: 15px 0 0 30px;
+}
+.mail_form_added{
+    color: #8e8071;
+    font-weight: 200;
+    font-size: 16px;
+}

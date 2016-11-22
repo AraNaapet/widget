@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Widgets</title>
+      <meta name="widjet" content="app">
+      <link rel="icon" type="image/ico" href="src/favicon.ico">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/iconfonts.css">
+      <link rel="stylesheet" href="css/menu.css">
+      <link rel="stylesheet" href="css/user.css">
+      <link rel="stylesheet" href="css/shares.css">
+      <link rel="stylesheet" href="css/diagram.css">
+      <link rel="stylesheet" href="css/profile.css">
+      <link rel="stylesheet" href="css/about_user.css">
+      <link rel="stylesheet" href="css/mail.css">
+      <script src="libs/jquery-3.1.1.min.js"></script>
+      <script src="libs/highcharts.js"></script>
+      <script src="libs/d3.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/shares.js"></script>
+      <script src="js/mail.js"></script>
+   </head>
+   <body>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-10">
+            <!-- /// MENU WIDGET /// -->
+              <div id="menu-widget" class="panel menu">
+                <ul class="menu_main">
+                  <li class="menu_first"><span class="icon-menu_01"></span><a href="#">Check&nbsp;in<span class="count">3</span></a></li>
+                  <li><span class="icon-menu_02"></span><a href="#">Events</a>
+                    <ul class="submenu">
+                      <li><a href=#><span>Friends</span></a></li>
+                      <li><a href=#><span>Relatives</span></a></li>
+                      <li><a class="submenu_last" href=#><span>Learning</span></a></li>
+                    </ul>
+                  </li>
+                  <li><span class="icon-menu_03"></span><a href="#">Account</a>
+                    <ul class="submenu">
+                      <li><a href=#><span>My page</span></a></li>
+                      <li><a href=#><span>News</span></a></li>
+                      <li><a href=#><span><span>Music</span></a></li>
+                      <li><a class="submenu_last" href=#><span>Photos</span></a></li>
+                    </ul>
+                  </li>
+                  <li class="menu_last"><span class="icon-menu_04"></span><a href="#">Settings</a></li>
+                </ul>
+              </div>
+
+            </div>
+         </div>
+         <div class="row">
+
+            <!-- COLUMN ONE -->
+            <div class="col-sm-6 col-md-4">
+               <!-- /// SHARES WIDGET /// -->   
+               <div id="shares-widget" class="panel shares">
+                  <div class="shares_background">
+                    <div class="shares_information">
+                      <i class="shares_information_arrow"></i>
+                      <span class="shares_information_big_index">634.39</span>
+                      <div class="shares_information_small_index">+2.18 (3.71%)</div>
+                    </div>
+                    <div id="graph"></div>
+                  </div>
+                  <div class="shares_data">
+                    <div class="shares_data_dynamics"><a href="#" onclick="processCharts(this);">show the dynamics</a></div>
+                    <div class="shares_data_time">Today 2:25 PM</div>
+                    <div class="shares_data_place">Salt Lake City, Utah</div>
+                    
+                    <div class="shares_data_traded">
+                      <dl>
+                        <dt>13.5 M</dt>
+                        <dd>Shares Traded</dd>
+                      </dl>
+                    </div>
+                    <div class="shares_data_traded last">
+                      <dl>
+                        <dt>28.44 B</dt>
+                        <dd>Market Cap</dd>
+                      </dl>
+                    </div>
+                    <div class="shares_data_aapl">
+                      <p class="shares_data_aapl_name">AAPL</p>
+                      <ul>
+                        <li><span class="orange" style="height: 37.5%"></span></li>
+                        <li><span class="orange" style="height: 47.5%"></span></li>
+                        <li><span class="orange" style="height: 70%"></span></li>
+                        <li><span class="orange" style="height: 85%"></span></li>
+                        <li><span class="orange" style="height: 40%"></span></li>
+                        <li><span class="green" style="height: 75%"></span></li>
+                        <li><span class="green" style="height: 50%"></span></li>
+                        <li><span class="green" style="height: 15%"></span></li>
+                        <li><span class="green" style="height: 25%"></span></li>
+                      </ul>
+                    </div>
+                    
+                    <div class="shares_data_yearly">
+                      <p class="shares_data_yearly_name">Yearly Change</p>
+                      <span><em>+</em> 127.01</span>
+                    </div>
+                  </div>
+               </div>
+
+               <div class="row">
+                  <div class="col-xs-3">
+                  <!-- /// USER WIDGET /// -->
+               <div id="user-widget" class="panel user">
+                  <div class="user_profile">
+                    <div class="user_profile_avatar_image">
+                      <img class="about_user_avatar" src="src/user_avatar.jpg" alt="user_avatar">
+                    </div>
+                    <div class="user_profile_user_name">
+                      Courtney Timmons
+                    </div>
+                    <div class="user_profile_info">
+                      15,323 followers
+                    </div>
+                  </div>
+          
+                  <div class="user_data">
+                    <ul class="user_data_menu">
+                      <li><a class="user_data_menu_content" href="#">
+                          <span class="user_data_menu_content_text">Edit User</span>
+                          <span class="icon-user_01"></span>
+                        </a>
+                      </li>
+                      <li><a class="user_data_menu_content" href="#">
+                          <span class="user_data_menu_content_text">Web statistics</span>
+                          <span class="icon-user_02"></span>
+                        </a>
+                      </li>
+                      <li><a class="user_data_menu_content" href="#">
+                          <span class="user_data_menu_content_text">Upload settings</span>
+                          <span class="icon-user_03"></span>
+                        </a>
+                      </li>
+                      <li><a class="user_data_menu_content_last" href="#">
+                          <span class="user_data_menu_content_text">Events</span>
+                          <span class="icon-user_04"></span>
+                        </a>
+                      </li>
+                    </ul>      
+                  </div>
+               </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- COLUMN TWO -->   
+            <div class="col-sm-6 col-md-4">
+               <!-- /// DIAGRAM WIDGET /// -->    
+               <div id="diagram-widget" class="diagram panel">
+                  <div class="diagram_tabs diagram_tabs_transparent">
+                    <ul class="diagram_tabs_selected clearfix">
+                        <li class="active"><a href="#diagram" data-toggle="tab">Diagram Stats</a></li>
+                        <li><a href="#month" data-toggle="tab">Month Report</a></li>
+                    </ul>
+                    <div class="tab-content">
+                      <div class="tab-pane fade in active" id="diagram">
+                        <div class="tab_content_name">Data Transfer</div>
+
+                              <div>
+                                <select id="dataSelection">
+                                  <option value="data_V1" selected="selected">Data V1</option>
+                                  <option value="data_V2">Data V2</option> 
+                                </select>
+
+                                <div id="pieChart">
+                                </div>
+                                <div id="pieText">
+                                  <span id="segmentTitle">Select<br/>segment</span>
+                                  <span id="segmentText"> </span>
+                                </div>
+                              </div>
+
+                            <script src="js/diagram.js"></script>
+                            
+                            <ul class="tab_content_statistic_data clearfix">
+                                <li><div class="diagram_statistic_data"><span>audio</span><strong>55%</strong></div></li>
+                                <li class="red"><div class="diagram_statistic_data"><span>video</span><strong>23%</strong></div></li>
+                                <li class="yellow"><div class="diagram_statistic_data"><span>photo</span><strong>17%</strong></div></li>
+                            </ul>
+
+                            <ul class="tab_content_statistic_links clearfix">
+                                <li><a href="#"><span class="icon-diagram_01"></span><br /><span class="diagram_statistic_button_name">upload files</span></a></li>
+                                <li><a href="#"><span class="icon-diagram_02"></span><br /><span class="diagram_statistic_button_name">share link</span></a></li>
+                                <li><a href="#"><span class="icon-diagram_03"></span><br /><span class="diagram_statistic_button_name">back up</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="month">
+                            <div class="tab_content_name">disk space usage <br>per month</div>
+                              <div class="graph__wrapper">
+                                <div class="coordinates">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span> 
+                                </div>
+                                  <svg width="280px" height="107px" viewBox="0 0 315 107" version="1.1">
+                                    <defs>
+                                        <linearGradient x1="0%" y1="100%" x2="100%" y2="100%" id="linearGradient-1">
+                                            <stop stop-color="#2090F8" offset="0%"></stop>
+                                            <stop stop-color="red" offset="50%"></stop>
+                                            <stop stop-color="red" offset="60%"></stop>
+                                            <stop stop-color="#2090F8" offset="100%"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                                        <path d="M1.1,95 L30,68 L35,81 L45,76 L56,86 L80,19 L92,23 L123,2 L151,22 L164,32 L174,43 L194,63 L217,68 L232,84" id="Path-1" stroke="url(#linearGradient-1)" stroke-width="4" sketch:type="MSShapeGroup" class="path"></path>
+                                    </g>
+                                </svg>
+                              </div>
+                            <ul class="tab_content_statistic_links clearfix">
+                                <li><a href="#"><span class="icon-diagram_01"></span><br /><span class="diagram_statistic_button_name">upload files</span></a></li>
+                                <li><a href="#"><span class="icon-diagram_02"></span><br /><span class="diagram_statistic_button_name">share link</span></a></li>
+                                <li><a href="#"><span class="icon-diagram_03"></span><br /><span class="diagram_statistic_button_name">back up</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+               </div>
+               <!-- /// PROFILE WIDGET /// -->             
+               <div id="profile-widget" class="panel profile" >
+          <ul>
+            <li class="profile_menu">
+              <a class="icon-profile_01" href="#">
+                                <span class="link_name">MY PROFILE</span>
+                            </a>
+              <ul class="profile_menu_submenu">
+                <li>
+                  <a href="#">INVITE FRIENDS</a>
+                </li>
+                <li>
+                  <a href="#">FIND FRIENDS</a>
+                </li>
+                <li class="profile_menu_submenu_logout">
+                  <a href="#">LOG OUT</a>
+                </li>
+              </ul>
+            </li>
+            <li class="profile_menu_edit">
+              <a class="icon-profile_02" href="#">
+                                <span class="link_name">EDIT</span>
+                            </a>
+              <a href="#">TRY AGAIN</a>
+              <a href="#">AGAIN...</a>
+              <a href="#">AND AGAIN</a>
+              <a href="#">OK!!!</a>
+              <div class="profile_menu_edit_result">
+                <ul>
+                  <li>SALE</li>
+                  <li>20%</li>
+                  <li>40%</li>
+                  <li>60%</li>
+                  <li>80%</li>
+                  <li>99%</li>
+                </ul>
+                <span></span>
+                <span></span>
+                <span class="profile_menu_edit_result_congrat">
+                  CONGRATS!!!
+                </span>
+              </div>
+            </li>
+          </ul>
+               </div>
+            </div>
+            
+            <!-- COLUMN THREE -->
+            <div class="col-sm-6 col-md-5 ">
+              <!-- /// ABOUT USER WIDGET /// -->
+              <div id="about_user-widget" class="panel about_user">
+                <div class="about_user_background">
+                </div>
+                <div class="about_user_profile" >
+                  <div class="about_user_avatar_border">
+                    <img class="about_user_avatar" src="src/about_user_avatar.jpg" alt="about_user_avatar">
+                  </div>
+                  <div class="about_user_profile_name">John Raymons</div>
+                  <div class="about_user_profile_description">Your talent amazes! This is awesome. Excited to see the final product.</div>
+                </div>
+                <div class="about_user_social">
+                  <div class="about_user_social_views">
+                    <div class="icon-about_user_01"></div>
+                    <div class="about_user_social_numbers">172</div>
+                  </div>
+                  <div class="about_user_social_talks">
+                    <div class="icon-about_user_02"></div>
+                    <div class="about_user_social_numbers">34</div>
+                  </div>
+                  <div class="about_user_social_like">
+                    <div class="icon-about_user_03"></div>
+                    <div class="about_user_social_numbers">120</div>
+                  </div>
+                </div>
+                <script src="js/about_user.js"></script>
+              </div>
+               <!-- /// MAIL WIDGET /// -->
+              <div id="mail-widget" class="panel mail">
+                <form method="post" action="mail_function">
+                  <div class="mail_form">
+                    <label for="email" class="mail_form_text">
+                      Contact
+                    </label>
+                    <div class="mail_form_input">
+                        <input id="email" type="text" placeholder="Email or Name"><button onclick="addContacts();return false;" id="add_contacts">+</button>
+                    </div>
+                    <label for="email" class="mail_form_text">
+                      Subject
+                    </label>
+                    <div class="mail_form_input">
+                       <input id="subject" type="text" placeholder="You can add a subject">
+                    </div>
+                    <label class="mail_form_text">
+                      Message
+                    </label>
+                    <div class="mail_form_input">
+                      <textarea placeholder="Leave you message here"></textarea>
+                      <div id="resultUsers" hidden><span class="mail_form_added">Added:</span></div>
+                    </div>
+                  </div>
+                  <div class="mail_form_footer">
+                    <div class="mail_form_button">
+                      <input type="checkbox">
+                        <label class="mail_form_checkbox_text">
+                          Save a copy
+                        </label>   
+                        <button onclick="return false;"><img src="src/button_red.svg" alt="red button play" style="width:20px;margin:10px;vertical-align:middle">Send Mail</button>
+                    </div>
+                  </div>
+                  </form>
+               </div>
+            </div>
+          </div>
+      </div>
+  </body>
+</html>

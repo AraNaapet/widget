@@ -1,0 +1,58 @@
+body {
+    padding: 100px 0;
+    background: url(../src/bkgr.jpg) no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.panel {
+    position: relative;
+    margin-bottom: 30px !important;
+    border: none  !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px !important;
+    font-family: "icomoon";
+}
+.menu, .shares, .user, .diagram, .profile, .about_user, .mail{
+    font-family: "Open Sans", sans-serif;
+}
+/*-- MENU WIDGET --*/
+.menu{
+    min-height: 65px;
+}
+
+/*-- COLUMN ONE --*/
+/*-- SHARES WIDGET --*/
+.shares{
+    min-height: 435px;
+}
+/*-- USER WIDGET --*/
+.user{
+    min-height: 310px;
+    width: 100%;
+    float: left;
+}
+
+/*-- COLUMN TWO --*/
+/*-- DIAGRAM WIDGET --*/
+.diagram{
+    min-height: 575px;
+}
+/*-- PROFILE WIDGET --*/
+.profile{
+    min-height: 170px;
+    
+}
+
+/*-- COLUMN THREE --*/
+/*-- ABOUT WIDGET --*/
+.about_user{
+    min-height: 390px;
+}
+/*-- MAIL WIDGET --*/
+.mail{
+    min-height: 470px;
+}
